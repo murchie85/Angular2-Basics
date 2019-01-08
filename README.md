@@ -79,9 +79,9 @@ Once you start the server with `npm start` you should see the browser load up wi
 
 # BREAKDOWN OF ANGULAR FILE COMPONENTS 
  
-
+<p align="center">
 <img src="comps.jpg" title="components" width="256" height="256">
-
+</p>
 
 ## app
 
@@ -93,4 +93,7 @@ This is our main directory inside we have ts for typescript and js for javascrip
  It gets translated into javascript automatically and dumped in a js folder. Remember its the js files the browser actually uses. 
 
 
-![type](type.jpg)  
+<p align="center">
+<img src="type.jpg" title="type" width="256" height="256">
+</p>
+
