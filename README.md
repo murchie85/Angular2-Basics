@@ -79,7 +79,7 @@ Once you start the server with `npm start` you should see the browser load up wi
 
 # BREAKDOWN OF ANGULAR FILE COMPONENTS 
  
-![components](comps.jpg) 
+![components](comps.jpg =250x250) 
 
 ## app
 
