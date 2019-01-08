@@ -83,17 +83,70 @@ Once you start the server with `npm start` you should see the browser load up wi
 <img src="comps.jpg" title="components" width="256" height="256">
 </p>
 
-## app
+## APP
 
 This is our main directory inside we have ts for typescript and js for javascript. 95% of time we are going to be working in ts folder. 
-
-# TypeScript 
-
-**Note** Type script will need to be translated into javascript for browser (you can translate online using transpilers) but in our case we can add script tags in the html like `script src="node_modules/angular2/bundles/angular2.dev.js"></script>`
- It gets translated into javascript automatically and dumped in a js folder. Remember its the js files the browser actually uses. 
-
 
 <p align="center">
 <img src="type.jpg" title="type" width="256" height="256">
 </p>
+
+**NOTE** don't mess with the js files they are generated automatically 
+
+
+# TypeScript 
+
+**Note** Type script will need to be translated into javascript for browser (you can translate online using transpilers) but in our case we can add script tags in the html like   
+
+`script src="node_modules/angular2/bundles/angular2.dev.js"></script>`  
+
+
+ It gets translated into javascript automatically and dumped in a js folder. Remember its the js files the browser actually uses. 
+
+## Map files 
+
+These are extra files that help you debug your code - because it maps the error in js to where it actually is in your ts
+
+
+## NODE MODULES 
+
+**DONT** mess with node modules, these are imported when you run `npm install` from specified dependencies in package.json
+
+## TYPTINGS
+
+Whenever we use new libraries javascript doesn't understand some of the syntax we use by default, so we use these typings files to provide the new rules which lets our transpiler do the conversion.  Also **DONT** touch.
+
+## tsconfig.json 
+
+These are details about how we wan't to convert typescript to javascript such as below : 
+
+```
+
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "system",
+    "moduleResolution": "node",
+    "outDir": "app/js",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false
+  },
+  "exclude": [
+    "node_modules",
+    "typings/main",
+    "typings/main.d.ts"
+  ]
+}
+
+```
+
+**outDir** - where to dump JS files 
+
+## index.html 
+
+Your main page, home page 
+
 
