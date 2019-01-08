@@ -2,7 +2,21 @@
 
 ![angular2](Angular2.jpg)  
 
+## CONTENTS
+
+1. [OVERVIEW](#)
+2. [SETTING UP BASE COMPONENTS](#SETTING-UP-BASE-COMPONENTS)
+3. [Understanding Packages](#PACKAGE)
+3. [Test ](#Test-Server)
+4. [Making your first change](#Making-your-first-change)
+5. [BREAKDOWN OF ANGULAR FILE STRUCTURE](BREAKDOWN-OF-ANGULAR-FILE-STRUCTURE)
+6. [WHAT ARE ANGULAR COMPONENTS?](#COMPONENTS)
+
+## OVERVIEW  
+
 Angular 2 is an open source JavaScript framework to build web applications in HTML and JavaScript. This tutorial looks at the various aspects of Angular 2 framework which includes the basics of the framework, the setup of Angular and how to work with the various aspects of the framework. Other topics discussed in the tutorial are advanced chapters such as interfaces, nested components and services within Angular. Topics such as routing, modules, and arrays are also dealt with in this tutorial.
+
+# SETTING UP BASE COMPONENTS
 
 ## Resources to clone 
 
@@ -73,11 +87,11 @@ Note the test server in the package `npm run lite\` instead of having to refresh
 
 # Making your first change 
 
-Once you start the server with `npm start` you should see the browser load up with the text `Angular 2 Template` we can amend this in the following location
+Once you start the server with `npm start` assuming you already ran `npm install` you should see the browser load up with the text `Angular 2 Template` we can amend this in the following location
 
 `app/ts/app.component.ts`
 
-# BREAKDOWN OF ANGULAR FILE COMPONENTS 
+# BREAKDOWN OF ANGULAR FILE STRUCTURE 
  
 <p align="center">
 <img src="comps.jpg" title="components" width="256" height="256">
@@ -112,7 +126,7 @@ These are extra files that help you debug your code - because it maps the error 
 
 **DONT** mess with node modules, these are imported when you run `npm install` from specified dependencies in package.json
 
-## TYPTINGS
+## TYPINGS
 
 Whenever we use new libraries javascript doesn't understand some of the syntax we use by default, so we use these typings files to provide the new rules which lets our transpiler do the conversion.  Also **DONT** touch.
 
@@ -150,3 +164,6 @@ These are details about how we wan't to convert typescript to javascript such as
 Your main page, home page 
 
 
+
+
+# COMPONENTS
