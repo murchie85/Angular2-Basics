@@ -20,7 +20,13 @@ Angular 2 is an open source JavaScript framework to build web applications in HT
 
 ## Resources to clone 
 
-There are a lot of resources required to download even for a base project, I have used bare minimum from BuckyRoberts example which can be found [here](https://github.com/buckyroberts/angular-2-template)
+There are a lot of resources required to download even for a base project, I have used bare minimum from BuckyRoberts example which can be found [here](https://github.com/buckyroberts/angular-2-template) .
+ 
+What to do is, take that link, and in the directory you want to work in just run 
+
+`git clone https://github.com/buckyroberts/angular-2-template` 
+ 
+This will give you all the pieces you need to get started, the base files and a simple bit of Angular displying a html heading.
 
 ## Installing NPM and Node.js
 
